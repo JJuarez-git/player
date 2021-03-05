@@ -1,0 +1,80 @@
+.player {
+    background-color: #333;
+    border-top: 1px solid #181818;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.wrp-parts {
+    min-width: 70rem;
+    /* max-width: 94rem; */
+    width: 100%;
+    border: 1px solid red;
+    height: 100%;
+    margin: auto;
+}
+
+.wrp-parts,
+.left-part,
+.right-part,
+.middle-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-part,
+.right-part {
+    padding: 0 .5rem;
+    border: 1px solid blue;
+    width: 30%;
+    height: 100%;
+}
+
+.middle-part {
+    padding: 0 .5rem;
+    border: 1px solid green;
+    width: 40%;
+    height: 100%;
+}
+
+.player-img {
+    border-radius: .3rem;
+    overflow: hidden;
+    margin-right: .5rem;
+    min-width: 3rem;
+}
+
+.player-img img {
+    height: 3rem;
+    display: block;
+}
+
+.player-song-info>span {
+    font-size: .8rem;
+}
+
+#artist {
+    color: #ffff00;
+    margin-right: .5rem;
+}
+
+#album {
+    max-width: 7rem;
+}
+
+.player-btns {
+    border: 1px solid yellow;
+}
+
+.player-btns img {
+    height: 24px;
+    display: block;
+}
+
+.player-song-percent {
+    width: 25rem;
+}

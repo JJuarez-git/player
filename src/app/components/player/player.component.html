@@ -1,0 +1,42 @@
+<div class="player">
+    <div class="wrp-parts">
+        <div class="left-part">
+            <div class="player-img">
+                <img src="assets/img/trippie.jpg" alt="cover-song">
+            </div>
+            <div class="player-song-info">
+                <p id="song">SEA WORLD</p>
+                <span id="artist">Trippie Redd</span>
+                <span id="album">Pegasus: Neon Shark vs Pegasus Presented By Travis Barker (Deluxe)</span>
+            </div>
+        </div>
+        <div class="middle-part">
+            <div class="player-btns" (load)="addMyClass()">
+                <button>
+                    <img src="assets/img/actions/tostart.png" alt="">
+                </button>
+                <button>
+                    <img src="assets/img/actions/play.png" alt="">
+                </button>
+                <button>
+                    <img src="assets/img/actions/toend.png" alt="">
+                </button>
+            </div>
+            <div class="player-counter">
+                <span>1:15</span>
+                <span>/</span>
+                <span>3:40</span>
+            </div>
+            <div class="player-song-percent">
+                <mat-progress-bar mode="determinate" value="60" color="warn"></mat-progress-bar>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="player-volume">
+                <img src="assets/img/actions/audio3.png" alt="">
+                <mat-slider min="0" max="100" value="100"></mat-slider>
+            </div>
+        </div>
+    </div>
+
+</div>

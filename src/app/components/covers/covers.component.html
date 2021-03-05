@@ -1,0 +1,24 @@
+<div class="cover" *ngFor="let item of nuevosLanzamientos | paginate:{ itemsPerPage: 10, currentPage: p}">
+    <div class="cover-img">
+        <div class="wrapper-img-play">
+            <img src="assets/img/actions/play.png">
+        </div>
+        <img class="cover-image-bg" src="{{item.images[0].url}}" alt="cover">
+    </div>
+    <div class="cover-info">
+        <p class="cover-type">{{item.album_type | capitalize}}</p>
+        <h3 class="cover-title">{{item.name}}</h3>
+        <p class="authors">
+            <a class="cover-author" routerLink="/artist/{{author.id}}" *ngFor="let author of item.artists"><small>{{author.name}}</small></a>
+        </p>
+
+
+        <div class="cover-buttons">
+            <button class="cover-add-btn">
+                <img src="assets/img/actions/plus.png" alt="Add to playlist" title="Add to playlist">
+            </button>
+        </div>
+    </div>
+</div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
